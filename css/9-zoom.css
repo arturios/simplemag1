@@ -1,0 +1,23 @@
+#overlayer {
+	position: fixed;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	z-index: -100;
+	opacity: 0;
+}
+
+#overlayer.set {
+	opacity: .9;
+	z-index: 1000;
+}
+
+#zoom, .zzz {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	z-index: -100;
+}

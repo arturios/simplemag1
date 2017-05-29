@@ -1,0 +1,113 @@
+/* comunes */
+
+@import url("./css/1-resetcss.css") all;
+@import url("./css/2-tipografias.css") all;
+@import url("./css/3.0-principal.css") all;
+@import url("./css/3.1-h2+h3.css") all;
+@import url("./css/3.2-p+p.css") all;
+@import url("./css/3.3-formularios.css") all;
+
+/* ---------------------- */
+
+
+/* escritorio e impresión */
+
+@import url("./css/4.0-escritorio.css") all and (min-width: 741px);
+@import url("./css/4.1-imagenes.css") all and (min-width: 741px);
+@import url("./css/4.2-cuadrado.css") all and (min-width: 741px);
+@import url("./css/4.3.0-rejilla1.css") all and (min-width: 741px);
+@import url("./css/4.3.1-rejilla_especiales1.css") all and (min-width: 741px);
+
+/* ---------------------------------- */
+
+
+/* efectos css escritorio e impresión */
+
+@import url("./css/4.4.0-efectos.css") all and (min-width: 741px);
+@import url("./css/4.4.1-z-index.css") all and (min-width: 741px);
+@import url("./css/4.4.10-rotaciones.css") all and (min-width: 741px);
+@import url("./css/4.4.11-especiales.css") all and (min-width: 741px);
+@import url("./css/4.4.2-listas.css") all and (min-width: 741px);
+@import url("./css/4.4.3-textos.css") all and (min-width: 741px);
+@import url("./css/4.4.4-bordes.css") all and (min-width: 741px);
+@import url("./css/4.4.5-paddings.css") all and (min-width: 741px);
+@import url("./css/4.4.6-columnas.css") all and (min-width: 741px);
+@import url("./css/4.4.7-opacidades.css") all and (min-width: 741px);
+@import url("./css/4.4.8-sombras.css") all and (min-width: 741px);
+@import url("./css/4.4.9-redondeos.css") all and (min-width: 741px);
+@import url("./css/4.5-colores.css") all and (min-width: 741px);
+
+/* --------------- */
+
+
+/* solo escritorio */
+
+@import url("./css/4.6-navegacion.css") screen and (min-width: 741px);
+@import url("./css/8-animaciones.css") screen and (min-width: 741px);
+@import url("./css/4.7-wordpress.css") screen and (min-width: 741px);
+
+/* ------------------ */
+
+/* solo escritorio y orientación vertical */
+
+@import url("./css/5.0-retrato.css") screen and (orientation: portrait) and (min-width: 741px);
+@import url("./css/5.1-cuadrados_retrato.css") screen and (orientation: portrait) and (min-width: 741px);
+
+/* --------- */
+
+
+/* impresión */
+
+@import url("./css/6-impresion.css") print;
+
+/* ------------- */
+
+
+/* versión móvil */
+
+@import url("./css/7-movil.css") screen and (max-width: 740px);
+
+/* -------------------- */
+
+
+/* zoom de las imágenes */
+
+@import url("./css/9-zoom.css") screen;
+
+/*tipografías*/
+
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400|Merriweather:400,400i,700,700i|Oswald';
+:root {
+    /* tipografias */
+    --serif: Merriweather;
+    --sans: Alegreya Sans;
+    --condensed: Oswald;
+    --ultrafina: Alegreya Sans;
+    --grosor: 100;
+    /* colores */
+    --negro: #000;
+    --beige: #b39f8d;
+    --oscuro: #3c3535;
+    --marron: #633f33;
+    --gris: #848283;
+    --grisclaro: #b5bab6;
+    --grisoscuro: #534949;
+    --purpura: #4f3262;
+    --morado: #641254;
+    --rojo: #c71f2d;
+    --rojooscuro: #7A0009;
+    --rojoclaro: #F9747E;
+    --naranja: #d39c43;
+    --naranjaclaro: #FFDA9D;
+    --amarillo: #f6e635;
+    --amarilloclaro: #FFF585;
+    --claro: #e7e9e7;
+    --blanco: #fff;
+    --azul: #77b3d4;
+    --azuloscuro: #4f5d73;
+    --azulclaro: #d8eaf3;
+    --verde: #76c2af;
+    --verdeoscuro: #5f6732;
+    --verdeclaro: #d2e4ad;
+    --transparente: rgba(0, 0, 0, 0);
+}

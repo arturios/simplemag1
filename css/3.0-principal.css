@@ -1,0 +1,151 @@
+
+/* Configuración de la página */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	line-height: 150%;
+	margin: 0;
+}
+
+a {
+	background: none;
+	text-decoration: none;
+}
+
+p a {
+	-webkit-text-decoration-style: dotted;
+	text-decoration-style: dotted;
+	-webkit-text-decoration-color: var(--rojo);
+	text-decoration-color: var(--rojo);
+	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline;
+}
+
+p {
+	z-index: 3;
+	word-wrap: break-word;
+	word-break: normal;
+	-webkit-hyphens: auto;
+	-webkit-hyphenate-character: \2010;
+	-webkit-hyphenate-limit-after: 1;
+	-webkit-hyphenate-limit-before: 3;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	orphans: 2;
+	widows: 2;
+	text-align: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+	font-weight: 700;
+	margin-top: calc(3rem-1em);
+	margin-bottom: 1.5rem;
+	line-height: 1.1em;
+}
+
+h1,
+.h1 {
+	font-size: 3rem;
+}
+
+h2,
+.h2 {
+	font-size: 2rem;
+}
+
+h3,
+.h3 {
+	font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+	font-size: 1.25rem;
+	font-style: italic;
+	line-height: 1.5em;
+}
+
+h5,
+.h5 {
+	font-size: 1.1rem;
+	line-height: 1em;
+	font-variant: small-caps;
+	font-weight: bold;
+	letter-spacing: .025em;
+}
+
+h5:before,
+.h5:before {
+	content: "- ";
+}
+
+h2+h3 {
+	margin-top: 3vh;
+	margin-bottom: 3.8vh;
+}
+
+blockquote {
+	margin: 1.5rem 0 3rem 0;
+	padding: 0 1.5rem;
+}
+
+small,
+cite {
+	font-size: .75rem;
+	line-height: 1.125rem;
+}
+
+object,
+embed {
+	clear: both;
+	height: auto;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: 2em;
+}
+
+ol {
+	list-style-type: decimal;
+	padding-left: 2em;
+}
+
+ul li,
+ol li {
+	padding-left: 1em;
+	padding-bottom: .5em;
+	margin: 0;
+}
+
+li p,
+li ul {
+	margin-bottom: 0;
+	margin-top: 0;
+}

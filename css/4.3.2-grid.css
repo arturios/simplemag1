@@ -1,0 +1,1560 @@
+[class^=grid-],
+[class*=grid-],
+.cssgrid,
+.grid-24x24,
+.subgrid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1;
+	grid-template-columns: 1;
+	-ms-grid-rows: 1;
+	grid-template-rows: 1;
+	display: -ms-grid;
+	display: grid;
+	overflow: hidden;
+	-ms-grid-column-align: stretch;
+	justify-items: stretch;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	-ms-grid-row-align: stretch;
+	align-items: stretch;
+}
+
+[class^=grid-] > .section,
+[class*=grid-] > .section,
+section.cssgrid,
+.grid-24x24 {
+	-ms-grid-columns: (1fr)[24];
+	grid-template-columns: repeat(24, 1fr);
+	-ms-grid-rows: (1fr)[24];
+	grid-template-rows: repeat(24, 1fr);
+}
+
+.cssgrid > * {
+	-ms-grid-column: 1;
+	grid-column-start: 1;
+	-ms-grid-column-span: 1;
+	grid-column-end: span 1;
+	-ms-grid-row: 1;
+	grid-row-start: 1;
+	-ms-grid-row-span: 1;
+	grid-row-end: span 1;
+}
+
+[class^=col-],
+[class*=col-],
+[class^=row-],
+[class*=row-] {
+	overflow: hidden;
+	z-index: 2;
+}
+
+.grid-stretch {
+	-ms-grid-column-align: stretch;
+	justify-items: stretch;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	-ms-grid-row-align: stretch;
+	align-items: stretch;
+}
+
+.grid-left {
+	-ms-grid-column-align: start;
+	justify-items: start;
+}
+
+.grid-right {
+	-ms-grid-column-align: end;
+	justify-items: end;
+}
+
+.grid-center {
+	-ms-grid-column-align: center;
+	justify-items: center;
+}
+
+.grid-top {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	-ms-grid-row-align: start;
+	align-items: start;
+}
+
+.grid-bottom {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	-ms-grid-row-align: end;
+	align-items: end;
+}
+
+.grid-vcenter {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}
+/* alineación de las celdas */
+
+.justify-left {
+	justify-self: start;
+}
+
+.justify-right {
+	justify-self: end;
+}
+
+.justify-center {
+	justify-self: center;
+}
+
+.justify-stretch {
+	justify-self: stretch;
+}
+
+.align-top {
+	-ms-flex-item-align: start;
+	align-self: start;
+}
+
+.align-bottom {
+	-ms-flex-item-align: end;
+	align-self: end;
+}
+
+.align-center {
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-stretch {
+	-ms-flex-item-align: stretch;
+	align-self: stretch;
+}
+/* espaciado entre columnas y filas */
+
+.gap-1em {
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+.gap-2em {
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+}
+
+.gap-4em {
+	grid-column-gap: 4rem;
+	grid-row-gap: 4rem;
+}
+
+.col-gap-1em {
+	grid-column-gap: 1rem;
+}
+
+.row-gap-1em {
+	grid-row-gap: 3vh;
+}
+
+.col-gap-2em {
+	grid-column-gap: 2rem;
+}
+
+.row-gap-2em {
+	grid-row-gap: 6vh;
+}
+
+.col-gap-4em {
+	grid-column-gap: 4rem;
+}
+
+.row-gap-4em {
+	grid-row-gap: 12vh;
+}
+
+[class^=grid-] > img,
+[class*=grid-] > img,
+.cssgrid > img,
+.subgrid > img {
+	width: inherit !important;
+	height: inherit !important;
+	margin: 0;
+	padding: 0;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center center;
+	object-position: center center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	clear: none;
+}
+
+[class^=grid-] > img.hrt,
+[class*=grid-] > img.hrt,
+.cssgrid > img.hrt,
+[class^=grid-] > img.vrt,
+[class*=grid-] > img.vrt,
+.cssgrid > img.vrt {
+	background-size: contain;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+[class^=grid-] > img.hrt,
+[class*=grid-] > img.hrt,
+.cssgrid > img.hrt {
+	width: inherit;
+	height: auto;
+	overflow: hidden;
+}
+
+[class^=grid-] > img.vrt,
+[class*=grid-] > img.vrt,
+.cssgrid > img.vrt {
+	height: inherit;
+	width: auto;
+}
+
+[class^=grid-] > img.center,
+[class*=grid-] > img.center,
+.cssgrid > img.center {
+	-o-object-position: left inherit;
+	object-position: left inherit;
+	background-position: left inherit;
+}
+
+[class^=grid-] > img.left,
+[class*=grid-] > img.left,
+.cssgrid > img.left {
+	-o-object-position: left inherit;
+	object-position: left inherit;
+	background-position: left inherit;
+}
+
+[class^=grid-] > img.right,
+[class*=grid-] > img.right,
+.cssgrid > img.right {
+	-o-object-position: right inherit;
+	object-position: right inherit;
+	background-position: right inherit;
+}
+
+[class^=grid-] > img.top,
+[class*=grid-] > img.top,
+.cssgrid > img.top {
+	-o-object-position: inherit top;
+	object-position: inherit top;
+	background-position: inherit top;
+}
+
+[class^=grid-] > img.bottom,
+[class*=grid-] > img.bottom,
+.cssgrid > img.bottom {
+	-o-object-position: inherit bottom;
+	object-position: inherit bottom;
+	background-position: inherit bottom;
+}
+/* grid */
+
+.grid-rows-1 {
+	-ms-grid-rows: (1fr)[1];
+	grid-template-rows: repeat(1, 1fr);
+}
+
+.grid-cols-1 {
+	-ms-grid-columns: (1fr)[1];
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.row-1 {
+	-ms-grid-row: 1;
+	grid-row-start: 1;
+}
+
+.col-1 {
+	-ms-grid-column: 1;
+	grid-column-start: 1;
+}
+
+.cols-1 {
+	-ms-grid-column-span: 1;
+	grid-column-end: span 1;
+}
+
+.rows-1 {
+	-ms-grid-row-span: 1;
+	grid-row-end: span 1;
+}
+/* ***** */
+
+.grid-rows-2 {
+	-ms-grid-rows: (1fr)[2];
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-cols-2 {
+	-ms-grid-columns: (1fr)[2];
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.row-2 {
+	-ms-grid-row: 2;
+	grid-row-start: 2;
+}
+
+.col-2 {
+	-ms-grid-column: 2;
+	grid-column-start: 2;
+}
+
+.cols-2 {
+	-ms-grid-column-span: 2;
+	grid-column-end: span 2;
+}
+
+.rows-2 {
+	-ms-grid-row-span: 2;
+	grid-row-end: span 2;
+}
+/* ***** */
+
+.grid-rows-3 {
+	-ms-grid-rows: (1fr)[3];
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-cols-3 {
+	-ms-grid-columns: (1fr)[3];
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.row-3 {
+	-ms-grid-row: 3;
+	grid-row-start: 3;
+}
+
+.col-3 {
+	-ms-grid-column: 3;
+	grid-column-start: 3;
+}
+
+.cols-3 {
+	-ms-grid-column-span: 3;
+	grid-column-end: span 3;
+}
+
+.rows-3 {
+	-ms-grid-row-span: 3;
+	grid-row-end: span 3;
+}
+/* ***** */
+
+.grid-rows-4 {
+	-ms-grid-rows: (1fr)[4];
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-cols-4 {
+	-ms-grid-columns: (1fr)[4];
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.row-4 {
+	-ms-grid-row: 4;
+	grid-row-start: 4;
+}
+
+.col-4 {
+	-ms-grid-column: 4;
+	grid-column-start: 4;
+}
+
+.cols-4 {
+	-ms-grid-column-span: 4;
+	grid-column-end: span 4;
+}
+
+.rows-4 {
+	-ms-grid-row-span: 4;
+	grid-row-end: span 4;
+}
+/* ***** */
+
+.grid-rows-5 {
+	-ms-grid-rows: (1fr)[5];
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-cols-5 {
+	-ms-grid-columns: (1fr)[5];
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.row-5 {
+	-ms-grid-row: 5;
+	grid-row-start: 5;
+}
+
+.col-5 {
+	-ms-grid-column: 5;
+	grid-column-start: 5;
+}
+
+.cols-5 {
+	-ms-grid-column-span: 5;
+	grid-column-end: span 5;
+}
+
+.rows-5 {
+	-ms-grid-row-span: 5;
+	grid-row-end: span 5;
+}
+/* ***** */
+
+.grid-rows-6 {
+	-ms-grid-rows: (1fr)[6];
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.grid-cols-6 {
+	-ms-grid-columns: (1fr)[6];
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.row-6 {
+	-ms-grid-row: 6;
+	grid-row-start: 6;
+}
+
+.col-6 {
+	-ms-grid-column: 6;
+	grid-column-start: 6;
+}
+
+.cols-6 {
+	-ms-grid-column-span: 6;
+	grid-column-end: span 6;
+}
+
+.rows-6 {
+	-ms-grid-row-span: 6;
+	grid-row-end: span 6;
+}
+/* ***** */
+
+.grid-rows-7 {
+	-ms-grid-rows: (1fr)[7];
+	grid-template-rows: repeat(7, 1fr);
+}
+
+.grid-cols-7 {
+	-ms-grid-columns: (1fr)[7];
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.row-7 {
+	-ms-grid-row: 7;
+	grid-row-start: 7;
+}
+
+.col-7 {
+	-ms-grid-column: 7;
+	grid-column-start: 7;
+}
+
+.cols-7 {
+	-ms-grid-column-span: 7;
+	grid-column-end: span 7;
+}
+
+.rows-7 {
+	-ms-grid-row-span: 7;
+	grid-row-end: span 7;
+}
+/* ***** */
+
+.grid-rows-8 {
+	-ms-grid-rows: (1fr)[8];
+	grid-template-rows: repeat(8, 1fr);
+}
+
+.grid-cols-8 {
+	-ms-grid-columns: (1fr)[8];
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.row-8 {
+	-ms-grid-row: 8;
+	grid-row-start: 8;
+}
+
+.col-8 {
+	-ms-grid-column: 8;
+	grid-column-start: 8;
+}
+
+.cols-8 {
+	-ms-grid-column-span: 8;
+	grid-column-end: span 8;
+}
+
+.rows-8 {
+	-ms-grid-row-span: 8;
+	grid-row-end: span 8;
+}
+/* ***** */
+
+.grid-rows-9 {
+	-ms-grid-rows: (1fr)[9];
+	grid-template-rows: repeat(9, 1fr);
+}
+
+.grid-cols-9 {
+	-ms-grid-columns: (1fr)[9];
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.row-9 {
+	-ms-grid-row: 9;
+	grid-row-start: 9;
+}
+
+.col-9 {
+	-ms-grid-column: 9;
+	grid-column-start: 9;
+}
+
+.cols-9 {
+	-ms-grid-column-span: 9;
+	grid-column-end: span 9;
+}
+
+.rows-9 {
+	-ms-grid-row-span: 9;
+	grid-row-end: span 9;
+}
+/* ***** */
+
+.grid-rows-10 {
+	-ms-grid-rows: (1fr)[10];
+	grid-template-rows: repeat(10, 1fr);
+}
+
+.grid-cols-10 {
+	-ms-grid-columns: (1fr)[10];
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.row-10 {
+	-ms-grid-row: 10;
+	grid-row-start: 10;
+}
+
+.col-10 {
+	-ms-grid-column: 10;
+	grid-column-start: 10;
+}
+
+.cols-10 {
+	-ms-grid-column-span: 10;
+	grid-column-end: span 10;
+}
+
+.rows-10 {
+	-ms-grid-row-span: 10;
+	grid-row-end: span 10;
+}
+/* ***** */
+
+.grid-rows-11 {
+	-ms-grid-rows: (1fr)[11];
+	grid-template-rows: repeat(11, 1fr);
+}
+
+.grid-cols-11 {
+	-ms-grid-columns: (1fr)[11];
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.row-11 {
+	-ms-grid-row: 11;
+	grid-row-start: 11;
+}
+
+.col-11 {
+	-ms-grid-column: 11;
+	grid-column-start: 11;
+}
+
+.cols-11 {
+	-ms-grid-column-span: 11;
+	grid-column-end: span 11;
+}
+
+.rows-11 {
+	-ms-grid-row-span: 11;
+	grid-row-end: span 11;
+}
+/* ***** */
+
+.grid-rows-12 {
+	-ms-grid-rows: (1fr)[12];
+	grid-template-rows: repeat(12, 1fr);
+}
+
+.grid-cols-12 {
+	-ms-grid-columns: (1fr)[12];
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.row-12 {
+	-ms-grid-row: 12;
+	grid-row-start: 12;
+}
+
+.col-12 {
+	-ms-grid-column: 12;
+	grid-column-start: 12;
+}
+
+.cols-12 {
+	-ms-grid-column-span: 12;
+	grid-column-end: span 12;
+}
+
+.rows-12 {
+	-ms-grid-row-span: 12;
+	grid-row-end: span 12;
+}
+/* ***** */
+
+.grid-rows-13 {
+	-ms-grid-rows: (1fr)[13];
+	grid-template-rows: repeat(13, 1fr);
+}
+
+.grid-cols-13 {
+	-ms-grid-columns: (1fr)[13];
+	grid-template-columns: repeat(13, 1fr);
+}
+
+.row-13 {
+	-ms-grid-row: 13;
+	grid-row-start: 13;
+}
+
+.col-13 {
+	-ms-grid-column: 13;
+	grid-column-start: 13;
+}
+
+.cols-13 {
+	-ms-grid-column-span: 13;
+	grid-column-end: span 13;
+}
+
+.rows-13 {
+	-ms-grid-row-span: 13;
+	grid-row-end: span 13;
+}
+/* ***** */
+
+.grid-rows-14 {
+	-ms-grid-rows: (1fr)[14];
+	grid-template-rows: repeat(14, 1fr);
+}
+
+.grid-cols-14 {
+	-ms-grid-columns: (1fr)[14];
+	grid-template-columns: repeat(14, 1fr);
+}
+
+.row-14 {
+	-ms-grid-row: 14;
+	grid-row-start: 14;
+}
+
+.col-14 {
+	-ms-grid-column: 14;
+	grid-column-start: 14;
+}
+
+.cols-14 {
+	-ms-grid-column-span: 14;
+	grid-column-end: span 14;
+}
+
+.rows-14 {
+	-ms-grid-row-span: 14;
+	grid-row-end: span 14;
+}
+/* ***** */
+
+.grid-rows-15 {
+	-ms-grid-rows: (1fr)[15];
+	grid-template-rows: repeat(15, 1fr);
+}
+
+.grid-cols-15 {
+	-ms-grid-columns: (1fr)[15];
+	grid-template-columns: repeat(15, 1fr);
+}
+
+.row-15 {
+	-ms-grid-row: 15;
+	grid-row-start: 15;
+}
+
+.col-15 {
+	-ms-grid-column: 15;
+	grid-column-start: 15;
+}
+
+.cols-15 {
+	-ms-grid-column-span: 15;
+	grid-column-end: span 15;
+}
+
+.rows-15 {
+	-ms-grid-row-span: 15;
+	grid-row-end: span 15;
+}
+/* ***** */
+
+.grid-rows-16 {
+	-ms-grid-rows: (1fr)[16];
+	grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-cols-16 {
+	-ms-grid-columns: (1fr)[16];
+	grid-template-columns: repeat(16, 1fr);
+}
+
+.row-16 {
+	-ms-grid-row: 16;
+	grid-row-start: 16;
+}
+
+.col-16 {
+	-ms-grid-column: 16;
+	grid-column-start: 16;
+}
+
+.cols-16 {
+	-ms-grid-column-span: 16;
+	grid-column-end: span 16;
+}
+
+.rows-16 {
+	-ms-grid-row-span: 16;
+	grid-row-end: span 16;
+}
+/* ***** */
+
+.grid-rows-17 {
+	-ms-grid-rows: (1fr)[17];
+	grid-template-rows: repeat(17, 1fr);
+}
+
+.grid-cols-17 {
+	-ms-grid-columns: (1fr)[17];
+	grid-template-columns: repeat(17, 1fr);
+}
+
+.row-17 {
+	-ms-grid-row: 17;
+	grid-row-start: 17;
+}
+
+.col-17 {
+	-ms-grid-column: 17;
+	grid-column-start: 17;
+}
+
+.cols-17 {
+	-ms-grid-column-span: 17;
+	grid-column-end: span 17;
+}
+
+.rows-17 {
+	-ms-grid-row-span: 17;
+	grid-row-end: span 17;
+}
+/* ***** */
+
+.grid-rows-18 {
+	-ms-grid-rows: (1fr)[18];
+	grid-template-rows: repeat(18, 1fr);
+}
+
+.grid-cols-18 {
+	-ms-grid-columns: (1fr)[18];
+	grid-template-columns: repeat(18, 1fr);
+}
+
+.row-18 {
+	-ms-grid-row: 18;
+	grid-row-start: 18;
+}
+
+.col-18 {
+	-ms-grid-column: 18;
+	grid-column-start: 18;
+}
+
+.cols-18 {
+	-ms-grid-column-span: 18;
+	grid-column-end: span 18;
+}
+
+.rows-18 {
+	-ms-grid-row-span: 18;
+	grid-row-end: span 18;
+}
+/* ***** */
+
+.grid-rows-19 {
+	-ms-grid-rows: (1fr)[19];
+	grid-template-rows: repeat(19, 1fr);
+}
+
+.grid-cols-19 {
+	-ms-grid-columns: (1fr)[19];
+	grid-template-columns: repeat(19, 1fr);
+}
+
+.row-19 {
+	-ms-grid-row: 19;
+	grid-row-start: 19;
+}
+
+.col-19 {
+	-ms-grid-column: 19;
+	grid-column-start: 19;
+}
+
+.cols-19 {
+	-ms-grid-column-span: 19;
+	grid-column-end: span 19;
+}
+
+.rows-19 {
+	-ms-grid-row-span: 19;
+	grid-row-end: span 19;
+}
+/* ***** */
+
+.grid-rows-20 {
+	-ms-grid-rows: (1fr)[20];
+	grid-template-rows: repeat(20, 1fr);
+}
+
+.grid-cols-20 {
+	-ms-grid-columns: (1fr)[20];
+	grid-template-columns: repeat(20, 1fr);
+}
+
+.row-20 {
+	-ms-grid-row: 20;
+	grid-row-start: 20;
+}
+
+.col-20 {
+	-ms-grid-column: 20;
+	grid-column-start: 20;
+}
+
+.cols-20 {
+	-ms-grid-column-span: 20;
+	grid-column-end: span 20;
+}
+
+.rows-20 {
+	-ms-grid-row-span: 20;
+	grid-row-end: span 20;
+}
+/* ***** */
+
+.grid-rows-21 {
+	-ms-grid-rows: (1fr)[21];
+	grid-template-rows: repeat(21, 1fr);
+}
+
+.grid-cols-21 {
+	-ms-grid-columns: (1fr)[21];
+	grid-template-columns: repeat(21, 1fr);
+}
+
+.row-21 {
+	-ms-grid-row: 21;
+	grid-row-start: 21;
+}
+
+.col-21 {
+	-ms-grid-column: 21;
+	grid-column-start: 21;
+}
+
+.cols-21 {
+	-ms-grid-column-span: 21;
+	grid-column-end: span 21;
+}
+
+.rows-21 {
+	-ms-grid-row-span: 21;
+	grid-row-end: span 21;
+}
+/* ***** */
+
+.grid-rows-22 {
+	-ms-grid-rows: (1fr)[22];
+	grid-template-rows: repeat(22, 1fr);
+}
+
+.grid-cols-22 {
+	-ms-grid-columns: (1fr)[22];
+	grid-template-columns: repeat(22, 1fr);
+}
+
+.row-22 {
+	-ms-grid-row: 22;
+	grid-row-start: 22;
+}
+
+.col-22 {
+	-ms-grid-column: 22;
+	grid-column-start: 22;
+}
+
+.cols-22 {
+	-ms-grid-column-span: 22;
+	grid-column-end: span 22;
+}
+
+.rows-22 {
+	-ms-grid-row-span: 22;
+	grid-row-end: span 22;
+}
+/* ***** */
+
+.grid-rows-23 {
+	-ms-grid-rows: (1fr)[23];
+	grid-template-rows: repeat(23, 1fr);
+}
+
+.grid-cols-23 {
+	-ms-grid-columns: (1fr)[23];
+	grid-template-columns: repeat(23, 1fr);
+}
+
+.row-23 {
+	-ms-grid-row: 23;
+	grid-row-start: 23;
+}
+
+.col-23 {
+	-ms-grid-column: 23;
+	grid-column-start: 23;
+}
+
+.cols-23 {
+	-ms-grid-column-span: 23;
+	grid-column-end: span 23;
+}
+
+.rows-23 {
+	-ms-grid-row-span: 23;
+	grid-row-end: span 23;
+}
+/* ***** */
+
+.grid-rows-24 {
+	-ms-grid-rows: (1fr)[24];
+	grid-template-rows: repeat(24, 1fr);
+}
+
+.grid-cols-24 {
+	-ms-grid-columns: (1fr)[24];
+	grid-template-columns: repeat(24, 1fr);
+}
+
+.row-24 {
+	-ms-grid-row: 24;
+	grid-row-start: 24;
+}
+
+.col-24 {
+	-ms-grid-column: 24;
+	grid-column-start: 24;
+}
+
+.cols-24 {
+	-ms-grid-column-span: 24;
+	grid-column-end: span 24;
+}
+
+.rows-24 {
+	-ms-grid-row-span: 24;
+	grid-row-end: span 24;
+}
+/* ***** */
+
+.grid-rows-25 {
+	-ms-grid-rows: (1fr)[25];
+	grid-template-rows: repeat(25, 1fr);
+}
+
+.grid-cols-25 {
+	-ms-grid-columns: (1fr)[25];
+	grid-template-columns: repeat(25, 1fr);
+}
+
+.row-25 {
+	-ms-grid-row: 25;
+	grid-row-start: 25;
+}
+
+.col-25 {
+	-ms-grid-column: 25;
+	grid-column-start: 25;
+}
+
+.cols-25 {
+	-ms-grid-column-span: 25;
+	grid-column-end: span 25;
+}
+
+.rows-25 {
+	-ms-grid-row-span: 25;
+	grid-row-end: span 25;
+}
+/* ***** */
+
+.grid-rows-26 {
+	-ms-grid-rows: (1fr)[26];
+	grid-template-rows: repeat(26, 1fr);
+}
+
+.grid-cols-26 {
+	-ms-grid-columns: (1fr)[26];
+	grid-template-columns: repeat(26, 1fr);
+}
+
+.row-26 {
+	-ms-grid-row: 26;
+	grid-row-start: 26;
+}
+
+.col-26 {
+	-ms-grid-column: 26;
+	grid-column-start: 26;
+}
+
+.cols-26 {
+	-ms-grid-column-span: 26;
+	grid-column-end: span 26;
+}
+
+.rows-26 {
+	-ms-grid-row-span: 26;
+	grid-row-end: span 26;
+}
+/* ***** */
+
+.grid-rows-27 {
+	-ms-grid-rows: (1fr)[27];
+	grid-template-rows: repeat(27, 1fr);
+}
+
+.grid-cols-27 {
+	-ms-grid-columns: (1fr)[27];
+	grid-template-columns: repeat(27, 1fr);
+}
+
+.row-27 {
+	-ms-grid-row: 27;
+	grid-row-start: 27;
+}
+
+.col-27 {
+	-ms-grid-column: 27;
+	grid-column-start: 27;
+}
+
+.cols-27 {
+	-ms-grid-column-span: 27;
+	grid-column-end: span 27;
+}
+
+.rows-27 {
+	-ms-grid-row-span: 27;
+	grid-row-end: span 27;
+}
+/* ***** */
+
+.grid-rows-28 {
+	-ms-grid-rows: (1fr)[28];
+	grid-template-rows: repeat(28, 1fr);
+}
+
+.grid-cols-28 {
+	-ms-grid-columns: (1fr)[28];
+	grid-template-columns: repeat(28, 1fr);
+}
+
+.row-28 {
+	-ms-grid-row: 28;
+	grid-row-start: 28;
+}
+
+.col-28 {
+	-ms-grid-column: 28;
+	grid-column-start: 28;
+}
+
+.cols-28 {
+	-ms-grid-column-span: 28;
+	grid-column-end: span 28;
+}
+
+.rows-28 {
+	-ms-grid-row-span: 28;
+	grid-row-end: span 28;
+}
+/* ***** */
+
+.grid-rows-29 {
+	-ms-grid-rows: (1fr)[29];
+	grid-template-rows: repeat(29, 1fr);
+}
+
+.grid-cols-29 {
+	-ms-grid-columns: (1fr)[29];
+	grid-template-columns: repeat(29, 1fr);
+}
+
+.row-29 {
+	-ms-grid-row: 29;
+	grid-row-start: 29;
+}
+
+.col-29 {
+	-ms-grid-column: 29;
+	grid-column-start: 29;
+}
+
+.cols-29 {
+	-ms-grid-column-span: 29;
+	grid-column-end: span 29;
+}
+
+.rows-29 {
+	-ms-grid-row-span: 29;
+	grid-row-end: span 29;
+}
+/* ***** */
+
+.grid-rows-30 {
+	-ms-grid-rows: (1fr)[30];
+	grid-template-rows: repeat(30, 1fr);
+}
+
+.grid-cols-30 {
+	-ms-grid-columns: (1fr)[30];
+	grid-template-columns: repeat(30, 1fr);
+}
+
+.row-30 {
+	-ms-grid-row: 30;
+	grid-row-start: 30;
+}
+
+.col-30 {
+	-ms-grid-column: 30;
+	grid-column-start: 30;
+}
+
+.cols-30 {
+	-ms-grid-column-span: 30;
+	grid-column-end: span 30;
+}
+
+.rows-30 {
+	-ms-grid-row-span: 30;
+	grid-row-end: span 30;
+}
+/* ***** */
+
+.grid-rows-31 {
+	-ms-grid-rows: (1fr)[31];
+	grid-template-rows: repeat(31, 1fr);
+}
+
+.grid-cols-31 {
+	-ms-grid-columns: (1fr)[31];
+	grid-template-columns: repeat(31, 1fr);
+}
+
+.row-31 {
+	-ms-grid-row: 31;
+	grid-row-start: 31;
+}
+
+.col-31 {
+	-ms-grid-column: 31;
+	grid-column-start: 31;
+}
+
+.cols-31 {
+	-ms-grid-column-span: 31;
+	grid-column-end: span 31;
+}
+
+.rows-31 {
+	-ms-grid-row-span: 31;
+	grid-row-end: span 31;
+}
+/* ***** */
+
+.grid-rows-32 {
+	-ms-grid-rows: (1fr)[32];
+	grid-template-rows: repeat(32, 1fr);
+}
+
+.grid-cols-32 {
+	-ms-grid-columns: (1fr)[32];
+	grid-template-columns: repeat(32, 1fr);
+}
+
+.row-32 {
+	-ms-grid-row: 32;
+	grid-row-start: 32;
+}
+
+.col-32 {
+	-ms-grid-column: 32;
+	grid-column-start: 32;
+}
+
+.cols-32 {
+	-ms-grid-column-span: 32;
+	grid-column-end: span 32;
+}
+
+.rows-32 {
+	-ms-grid-row-span: 32;
+	grid-row-end: span 32;
+}
+/* ***** */
+
+.grid-rows-33 {
+	-ms-grid-rows: (1fr)[33];
+	grid-template-rows: repeat(33, 1fr);
+}
+
+.grid-cols-33 {
+	-ms-grid-columns: (1fr)[33];
+	grid-template-columns: repeat(33, 1fr);
+}
+
+.row-33 {
+	-ms-grid-row: 33;
+	grid-row-start: 33;
+}
+
+.col-33 {
+	-ms-grid-column: 33;
+	grid-column-start: 33;
+}
+
+.cols-33 {
+	-ms-grid-column-span: 33;
+	grid-column-end: span 33;
+}
+
+.rows-33 {
+	-ms-grid-row-span: 33;
+	grid-row-end: span 33;
+}
+/* ***** */
+
+.grid-rows-34 {
+	-ms-grid-rows: (1fr)[34];
+	grid-template-rows: repeat(34, 1fr);
+}
+
+.grid-cols-34 {
+	-ms-grid-columns: (1fr)[34];
+	grid-template-columns: repeat(34, 1fr);
+}
+
+.row-34 {
+	-ms-grid-row: 34;
+	grid-row-start: 34;
+}
+
+.col-34 {
+	-ms-grid-column: 34;
+	grid-column-start: 34;
+}
+
+.cols-34 {
+	-ms-grid-column-span: 34;
+	grid-column-end: span 34;
+}
+
+.rows-34 {
+	-ms-grid-row-span: 34;
+	grid-row-end: span 34;
+}
+/* ***** */
+
+.grid-rows-35 {
+	-ms-grid-rows: (1fr)[35];
+	grid-template-rows: repeat(35, 1fr);
+}
+
+.grid-cols-35 {
+	-ms-grid-columns: (1fr)[35];
+	grid-template-columns: repeat(35, 1fr);
+}
+
+.row-35 {
+	-ms-grid-row: 35;
+	grid-row-start: 35;
+}
+
+.col-35 {
+	-ms-grid-column: 35;
+	grid-column-start: 35;
+}
+
+.cols-35 {
+	-ms-grid-column-span: 35;
+	grid-column-end: span 35;
+}
+
+.rows-35 {
+	-ms-grid-row-span: 35;
+	grid-row-end: span 35;
+}
+/* ***** */
+
+.grid-rows-36 {
+	-ms-grid-rows: (1fr)[36];
+	grid-template-rows: repeat(36, 1fr);
+}
+
+.grid-cols-36 {
+	-ms-grid-columns: (1fr)[36];
+	grid-template-columns: repeat(36, 1fr);
+}
+
+.row-36 {
+	-ms-grid-row: 36;
+	grid-row-start: 36;
+}
+
+.col-36 {
+	-ms-grid-column: 36;
+	grid-column-start: 36;
+}
+
+.cols-36 {
+	-ms-grid-column-span: 36;
+	grid-column-end: span 36;
+}
+
+.rows-36 {
+	-ms-grid-row-span: 36;
+	grid-row-end: span 36;
+}
+/* ***** */
+
+.grid-rows-37 {
+	-ms-grid-rows: (1fr)[37];
+	grid-template-rows: repeat(37, 1fr);
+}
+
+.grid-cols-37 {
+	-ms-grid-columns: (1fr)[37];
+	grid-template-columns: repeat(37, 1fr);
+}
+
+.row-37 {
+	-ms-grid-row: 37;
+	grid-row-start: 37;
+}
+
+.col-37 {
+	-ms-grid-column: 37;
+	grid-column-start: 37;
+}
+
+.cols-37 {
+	-ms-grid-column-span: 37;
+	grid-column-end: span 37;
+}
+
+.rows-37 {
+	-ms-grid-row-span: 37;
+	grid-row-end: span 37;
+}
+/* ***** */
+
+.grid-rows-38 {
+	-ms-grid-rows: (1fr)[38];
+	grid-template-rows: repeat(38, 1fr);
+}
+
+.grid-cols-38 {
+	-ms-grid-columns: (1fr)[38];
+	grid-template-columns: repeat(38, 1fr);
+}
+
+.row-38 {
+	-ms-grid-row: 38;
+	grid-row-start: 38;
+}
+
+.col-38 {
+	-ms-grid-column: 38;
+	grid-column-start: 38;
+}
+
+.cols-38 {
+	-ms-grid-column-span: 38;
+	grid-column-end: span 38;
+}
+
+.rows-38 {
+	-ms-grid-row-span: 38;
+	grid-row-end: span 38;
+}
+/* ***** */
+
+.grid-rows-39 {
+	-ms-grid-rows: (1fr)[39];
+	grid-template-rows: repeat(39, 1fr);
+}
+
+.grid-cols-39 {
+	-ms-grid-columns: (1fr)[39];
+	grid-template-columns: repeat(39, 1fr);
+}
+
+.row-39 {
+	-ms-grid-row: 39;
+	grid-row-start: 39;
+}
+
+.col-39 {
+	-ms-grid-column: 39;
+	grid-column-start: 39;
+}
+
+.cols-39 {
+	-ms-grid-column-span: 39;
+	grid-column-end: span 39;
+}
+
+.rows-39 {
+	-ms-grid-row-span: 39;
+	grid-row-end: span 39;
+}
+/* ***** */
+
+.grid-rows-40 {
+	-ms-grid-rows: (1fr)[40];
+	grid-template-rows: repeat(40, 1fr);
+}
+
+.grid-cols-40 {
+	-ms-grid-columns: (1fr)[40];
+	grid-template-columns: repeat(40, 1fr);
+}
+
+.row-40 {
+	-ms-grid-row: 40;
+	grid-row-start: 40;
+}
+
+.col-40 {
+	-ms-grid-column: 40;
+	grid-column-start: 40;
+}
+
+.cols-40 {
+	-ms-grid-column-span: 40;
+	grid-column-end: span 40;
+}
+
+.rows-40 {
+	-ms-grid-row-span: 40;
+	grid-row-end: span 40;
+}
+/* ***** */
+
+.grid-rows-41 {
+	-ms-grid-rows: (1fr)[41];
+	grid-template-rows: repeat(41, 1fr);
+}
+
+.grid-cols-41 {
+	-ms-grid-columns: (1fr)[41];
+	grid-template-columns: repeat(41, 1fr);
+}
+
+.row-41 {
+	-ms-grid-row: 41;
+	grid-row-start: 41;
+}
+
+.col-41 {
+	-ms-grid-column: 41;
+	grid-column-start: 41;
+}
+
+.cols-41 {
+	-ms-grid-column-span: 41;
+	grid-column-end: span 41;
+}
+
+.rows-41 {
+	-ms-grid-row-span: 41;
+	grid-row-end: span 41;
+}
+/* ***** */
+
+.grid-rows-42 {
+	-ms-grid-rows: (1fr)[42];
+	grid-template-rows: repeat(42, 1fr);
+}
+
+.grid-cols-42 {
+	-ms-grid-columns: (1fr)[42];
+	grid-template-columns: repeat(42, 1fr);
+}
+
+.row-42 {
+	-ms-grid-row: 42;
+	grid-row-start: 42;
+}
+
+.col-42 {
+	-ms-grid-column: 42;
+	grid-column-start: 42;
+}
+
+.cols-42 {
+	-ms-grid-column-span: 42;
+	grid-column-end: span 42;
+}
+
+.rows-42 {
+	-ms-grid-row-span: 42;
+	grid-row-end: span 42;
+}
+/* ***** */

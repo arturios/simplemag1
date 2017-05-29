@@ -1,0 +1,307 @@
+/* colores */
+
+.bblack {
+	background-color: var(--negro) !important;
+}
+
+.beige {
+	background-color: var(--beige) !important;
+}
+
+.black {
+	background-color: var(--oscuro) !important;
+}
+
+.brown {
+	background-color: var(--marron) !important;
+}
+
+.gray {
+	background-color: var(--gris) !important;
+}
+
+.lightgray {
+	background-color: var(--grisclaro) !important;
+}
+
+.darkgray {
+	background-color: var(--grisoscuro);
+}
+
+.purple {
+	background-color: var(--purpura) !important;
+}
+
+.quiet {
+	background-color: var(--morado) !important;
+}
+
+.red {
+	background-color: var(--rojo) !important;
+}
+
+.orange {
+	background-color: var(--naranja) !important;
+}
+
+.yellow {
+	background-color: var(--amarillo) !important;
+}
+
+.white {
+	background-color: var(--claro) !important;
+}
+
+.blue {
+	background-color: var(--azul) !important;
+}
+
+.dark-blue,
+.darkblue {
+	background-color: var(--azuloscuro) !important;
+}
+
+.lightblue {
+	background-color: var(--azulclaro) !important;
+}
+
+.green {
+	background-color: var(--verde) !important;
+}
+
+.darkgreen,
+.dark-green {
+	background-color: var(--verdeoscuro) !important;
+}
+
+.lightgreen {
+	background-color: var(--verdeclaro) !important;
+}
+
+.wwhite {
+	background-color: var(--blanco) !important;
+}
+
+.transparent {
+	background-color: var(--transparente) !important;
+}
+
+.text-bblack {
+	color: var(--negro) !important;
+}
+
+.text-beige {
+	color: var(--beige) !important;
+}
+
+.text-black {
+	color: var(--oscuro) !important;
+}
+
+.text-brown {
+	color: var(--marron) !important;
+}
+
+.text-gray {
+	color: var(--gris) !important;
+}
+
+.text-lightgray {
+	color: var(--grisclaro) !important;
+}
+
+.text-purple {
+	color: var(--purpura) !important;
+}
+
+.text-quiet {
+	color: var(--morado) !important;
+}
+
+.text-red {
+	color: var(--rojo) !important;
+}
+
+.text-orange {
+	color: var(--naranja) !important;
+}
+
+.text-yellow {
+	color: var(--amarillo) !important;
+}
+
+.text-white {
+	color: var(--claro) !important;
+}
+
+.text-blue {
+	color: var(--azul) !important;
+}
+
+.text-dark-blue,
+.text-darkblue {
+	color: var(--azuloscuro) !important;
+}
+
+.text-green {
+	color: var(--verde) !important;
+}
+
+.text-darkgreen,
+.text-dark-green {
+	color: var(--verdeoscuro) !important;
+}
+
+.text-lightgreen {
+	color: var(--verdeclaro) !important;
+}
+
+.text-wwhite {
+	color: var(--blanco) !important;
+}
+
+.border-bblack {
+	border-color: var(--negro) !important;
+}
+
+.border-beige {
+	border-color: var(--beige) !important;
+}
+
+.border-black {
+	border-color: var(--oscuro) !important;
+}
+
+.border-brown {
+	border-color: var(--marron) !important;
+}
+
+.border-gray {
+	border-color: var(--gris) !important;
+}
+
+.border-lightgray {
+	border-color: var(--grisclaro) !important;
+}
+
+.border-purple {
+	border-color: var(--purpura) !important;
+}
+
+.border-quiet {
+	border-color: var(--morado) !important;
+}
+
+.border-red {
+	border-color: var(--rojo) !important;
+}
+
+.border-orange {
+	border-color: var(--naranja) !important;
+}
+
+.border-yellow {
+	border-color: var(--amarillo) !important;
+}
+
+.border-white {
+	border-color: var(--claro) !important;
+}
+
+.border-blue {
+	border-color: var(--azul) !important;
+}
+
+.border-dark-blue,
+.border-darkblue {
+	border-color: var(--azuloscuro) !important;
+}
+
+.border-green {
+	border-color: var(--verde) !important;
+}
+
+.border-darkgreen,
+.border-dark-green {
+	border-color: var(--verdeoscuro) !important;
+}
+
+.border-lightgreen {
+	border-color: var(--verdeclaro) !important;
+}
+
+.border-wwhite {
+	border-color: var(--blanco) !important;
+}
+
+a:hover {
+	color: var(--rojo);
+}
+
+.red a:hover {
+	color: var(--verde);
+}
+
+.gray,
+.darkblue,
+.dark-blue,
+.darkgray,
+.green,
+.darkgreen,
+.dark-green,
+.black,
+.brown,
+.red,
+.blueblack,
+.bblack,
+.orange,
+.purple,
+.quiet,
+.beige {
+	color: var(--claro);
+}
+
+.lightblue,
+.lightgreen,
+.lightyellow,
+.lightgray,
+.blue,
+.yellow,
+.white,
+.wwhite {
+	color: var(--oscuro);
+}
+
+.white a,
+.lightblue a,
+.lightgreen a,
+.lightyellow a,
+.lightgray a,
+.blue a,
+.yellow a {
+	color: var(--azuloscuro) !important;
+}
+
+a,
+.text-bblack {
+	color: var(--negro);
+}
+
+.text-lightblue,
+.gray a,
+.darkblue a,
+.dark-blue a,
+.green a,
+.darkgreen a,
+.dark-green a,
+.black a,
+.darkgray a,
+.bblack a,
+.brown a,
+.red a,
+.orange a,
+.purple a,
+.quiet a,
+.beige a {
+	color: var(--azulclaro);
+}
